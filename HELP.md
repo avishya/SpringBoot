@@ -27,3 +27,10 @@ psql
 \du - list the roles
 \c student - connects to student database 
 CREATE DATABASE student;
+\d - list the tables in db
+\d student_modal - description of the table
+
+For windows, download PostgreSQL from https://www.postgresql.org/download/
+default username postgres, password is master password set during installation
+
+ctrl + Alt + V - introduce variable

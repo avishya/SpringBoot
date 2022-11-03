@@ -34,13 +34,13 @@ public class DemoApplication {
 
 	@GetMapping(path="student")
 	public List<StudentModal> returnStudent(){
-		return List.of(new StudentModal(123,"avishya","avisha.t@gmail.com",26,
+		return List.of(new StudentModal(123L,"avishya","avisha.t@gmail.com",26,
 				LocalDate.of(1990, Month.SEPTEMBER,6)));
 	}
 
 	@GetMapping(path="student/{name}/{age}")
 	public List<StudentModal> returnStudent1(@PathVariable String name,@PathVariable int age){
-		return List.of(new StudentModal(123,name,"avisha.t@gmail.com",age,
+		return List.of(new StudentModal(123L,name,"avisha.t@gmail.com",age,
 				LocalDate.of(1990, Month.SEPTEMBER,6)));
 	}
 
