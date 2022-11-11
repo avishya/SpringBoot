@@ -11,6 +11,7 @@ import java.util.List;
 @Configuration
 public class StudentConfig {
 
+    //@Bean - runs when the program is started
     @Bean
     CommandLineRunner commandLineRunner(StudentRepository repository){
         return args -> {
@@ -23,8 +24,8 @@ public class StudentConfig {
 
             StudentModal manoj = new StudentModal(
                     "manoj",
-                    "avisha.t@gmail.com",
-                    26,
+                    "manoj@gmail.com",
+                    28,
                     LocalDate.of(1986, Month.SEPTEMBER, 6)
             );
             repository.saveAll(List.of(avishya, manoj));

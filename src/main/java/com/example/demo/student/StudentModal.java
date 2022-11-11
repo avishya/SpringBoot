@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Getter
 @Setter
 @Entity //map this student to database. this is for hibernate
-@Table //this is for table in database
+@Table(name = "studentmac") //this is for table in database
 public class StudentModal {
     @Id
     @SequenceGenerator(
